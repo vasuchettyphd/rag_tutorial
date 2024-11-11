@@ -1,0 +1,35 @@
+version: '3.8'
+
+services:
+  opensearch:
+    image: opensearchproject/opensearch:latest
+    environment:
+      - discovery.type=single-node
+      - plugins.security.disabled=true
+      - bootstrap.memory_lock=true
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+    ports:
+      - "9200:9200"
+      - "9600:9600"  # For monitoring
+    networks:
+      - llm_network
+
+  streamlit_app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - OPENSEARCH_URL=http://opensearch:9200
+    ports:
+      - "8501:8501"
+    depends_on:
+      - opensearch
+    networks:
+      - llm_network
+
+networks:
+  llm_network:
+    driver: bridge
