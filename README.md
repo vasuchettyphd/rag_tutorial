@@ -11,8 +11,8 @@ environment, OpenSearch for storing external data, and Streamlit to interact wit
    - [Prompt Engineering Example](#prompt-engineering-example)
 - [Retrival-Augmented Generation](#rag)
 - [Docker](#docker)
-- [Streamlit] (#streamlit)
-- [OpenSearch] (#opensearch)
+- [Streamlit](#streamlit)
+- [OpenSearch](#opensearch)
 
 <a name="prompt-engineering"/>
 
