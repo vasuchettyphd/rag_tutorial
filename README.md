@@ -21,7 +21,7 @@ Note that the majority of the code used in this project as well as the documenta
 
 <details>
 
-<summary>**Prompt engineering** is the process of designing and optimizing prompts (input text or queries) given to AI models (like GPT-3, GPT-4, or other LLMs) to achieve a specific, desired response.</summary>
+<summary><b>Prompt engineering</b> is the process of designing and optimizing prompts (input text or queries) given to AI models (like GPT-3, GPT-4, or other LLMs) to achieve a specific, desired response.</summary>
 It involves crafting questions, statements, or instructions in ways that guide the model to produce responses that are relevant, accurate, and useful for a given task.
 
 ### Key Aspects of Prompt Engineering
