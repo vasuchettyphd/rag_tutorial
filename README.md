@@ -21,9 +21,8 @@ Note that the majority of the code used in this project as well as the documenta
 
 <details>
 
-<summary>Prompt engineering is the process of designing and optimizing inputs given to AI models</summary>
-
-**Prompt engineering** is the process of designing and optimizing prompts (input text or queries) given to AI models (like GPT-3, GPT-4, or other LLMs) to achieve a specific, desired response. It involves crafting questions, statements, or instructions in ways that guide the model to produce responses that are relevant, accurate, and useful for a given task.
+<summary>**Prompt engineering** is the process of designing and optimizing prompts (input text or queries) given to AI models (like GPT-3, GPT-4, or other LLMs) to achieve a specific, desired response.</summary>
+It involves crafting questions, statements, or instructions in ways that guide the model to produce responses that are relevant, accurate, and useful for a given task.
 
 ### Key Aspects of Prompt Engineering
 
@@ -49,6 +48,11 @@ Note that the majority of the code used in this project as well as the documenta
 <a name="prompt-engineering-example"/>
 
 ## Prompt Engineering Example
+
+<details>
+
+<summary>How to generate better images by improving the details in the prompt message.</summary>
+
 <p align="right"><a href="#top">Go to top</a></p>
 
 Using ChatGPT 4o, the prompt: 
@@ -71,12 +75,16 @@ yields the following image and response:
 
 Here is the generated image of a tree in a suburban neighborhood during the middle of fall, with leaves in shades of green, yellow, and brown. Let me know if you need any adjustments!
 
+</details>
+
 <a name="rag"/>
 
 ## Retrieval-Augmented Generation
 <p align="right"><a href="#top">Go to top</a></p>
 
-**Retrieval-Augmented Generation (RAG)** is a method used in natural language processing that combines **retrieval** of relevant information with **generation** of natural language responses. It enables large language models (LLMs) to generate more accurate, contextually relevant, and informed answers by incorporating external knowledge into the response process. RAG is particularly valuable in applications where the model needs to generate responses based on a large knowledge base or document set, such as in customer service, question answering, and summarization tasks.
+<details>
+
+<summary>**Retrieval-Augmented Generation (RAG)** is a method used in natural language processing that combines **retrieval** of relevant information with **generation** of natural language responses.</summary> It enables large language models (LLMs) to generate more accurate, contextually relevant, and informed answers by incorporating external knowledge into the response process. RAG is particularly valuable in applications where the model needs to generate responses based on a large knowledge base or document set, such as in customer service, question answering, and summarization tasks.
 
 ### Key Components of Retrieval-Augmented Generation
 
@@ -100,12 +108,16 @@ The basic workflow of a RAG system is as follows:
 
 ![rag model with respect to prompt engineering](images/rag.png "RAG Model with respect to Prompt Engineering")
 
+</details>
+
 <a name="docker"/>
 
 ## Docker
 <p align="right"><a href="#top">Go to top</a></p>
 
-**Docker** is an open-source platform that enables developers to automate the deployment, scaling, and management of applications inside lightweight, portable containers. These containers bundle everything needed to run an application, including the code, runtime, libraries, and dependencies, making it easier to develop, ship, and run applications consistently across different environments.
+<details>
+
+<summary>**Docker** is an open-source platform that enables developers to automate the deployment, scaling, and management of applications inside lightweight, portable containers.</summary> These containers bundle everything needed to run an application, including the code, runtime, libraries, and dependencies, making it easier to develop, ship, and run applications consistently across different environments.
 
 ### Key Concepts in Docker
 
@@ -140,12 +152,16 @@ The basic workflow of a RAG system is as follows:
 4. **Scalability**: Docker containers can be scaled easily across distributed systems, making them well-suited for microservices architectures.
 5. **Developer Productivity**: Docker accelerates the development workflow by enabling rapid deployment and testing, faster code updates, and improved collaboration.
 
+</details>
+
 <a name="streamlit"/>
 
 ## Streamlit
 <p align="right"><a href="#top">Go to top</a></p>
 
-**Streamlit** is an open-source Python library that makes it easy for developers and data scientists to build and deploy interactive web applications for data analysis and machine learning models. Streamlit simplifies the process of creating user interfaces for data science projects by enabling you to build a front end in Python, without needing extensive web development skills.
+<details>
+
+<summary>**Streamlit** is an open-source Python library that makes it easy for developers and data scientists to build and deploy interactive web applications, including apps for data analysis or interacting with large language models.</summary> Streamlit simplifies the process of creating user interfaces for data science projects by enabling you to build a front end in Python, without needing extensive web development skills.
 
 ### Key Features of Streamlit
 
@@ -173,12 +189,16 @@ The basic workflow of a RAG system is as follows:
 
 In summary, Streamlit is a powerful tool for turning data and models into interactive web applications, making it ideal for data science, machine learning, and prototyping applications with minimal setup.
 
+</summary>
+
 <a name="opensearch"/>
 
 ## OpenSearch
 <p align="right"><a href="#top">Go to top</a></p>
 
-**OpenSearch** is an open-source search and analytics suite that enables users to perform advanced search, monitoring, and analysis tasks on large volumes of data. Originally derived from Elasticsearch and Kibana, OpenSearch was developed by Amazon Web Services (AWS) as a community-driven, Apache 2.0 licensed alternative. It offers capabilities for full-text search, log and event data analysis, and real-time analytics, commonly used in application monitoring, security monitoring, and business intelligence.
+<details>
+
+<summary>**OpenSearch** is an open-source search and analytics suite that enables users to perform advanced search, monitoring, and analysis tasks on large volumes of data.</summary> Originally derived from Elasticsearch and Kibana, OpenSearch was developed by Amazon Web Services (AWS) as a community-driven, Apache 2.0 licensed alternative. It offers capabilities for full-text search, log and event data analysis, and real-time analytics, commonly used in application monitoring, security monitoring, and business intelligence.
 
 ### Key Components of OpenSearch
 
@@ -256,3 +276,5 @@ In summary, Streamlit is a powerful tool for turning data and models into intera
 - **Community-Driven**: OpenSearch has an active community, ensuring continuous development, feature improvements, and support.
 
 In summary, OpenSearch is a powerful, open-source search and analytics platform designed to help organizations search, analyze, and visualize large volumes of data across various domains. Its capabilities make it well-suited for applications involving search, data monitoring, and real-time analytics.
+
+</details>
