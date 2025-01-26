@@ -4,7 +4,7 @@
 
 The goal of this project is to build a simple RAG (Retrieval-Augmented Generation) model and deploy it. To begin, let's start out with some definitions to better understand the principles behind RAG models as well as some of the foundational architecture we will use to quickly deploy it. We will use Docker to make it easy to deploy in any environment, OpenSearch for storing external data, and Streamlit to interact with the model. 
 
-Note that the majority of the code used in this project as well as the documentation for this README was generated using [ChatGPT 4o](https://chatgpt.com/).
+Note that the code used in this project as well as the documentation for this README was generated using [ChatGPT 4o](https://chatgpt.com/) before being edited and tested by a human.
 
 ### Table of Contents
 - [Prompt Engineering](#prompt-engineering)
