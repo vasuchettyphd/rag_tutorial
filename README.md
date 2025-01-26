@@ -7,11 +7,10 @@ The goal of this project is to build a simple RAG (Retrieval-Augmented Generatio
 Note that the code used in this project as well as the documentation for this README was generated using [ChatGPT 4o](https://chatgpt.com/) before being edited and tested by a human.
 
 ### Table of Contents
-- [Project] (#project)
-   - [Hosting the Docker Container] (#docker-container)
-   - [Hosting the Streamlit App] (#streamlit-app)
-
-- [Appendix] (#appendix)
+- [Project](#project)
+   - [Hosting the Docker Container](#docker-container)
+   - [Hosting the Streamlit App](#streamlit-app)
+- [Appendix](#appendix)
    - [Prompt Engineering](#prompt-engineering)
       - [Prompt Engineering Example](#prompt-engineering-example)
    - [Retrival-Augmented Generation](#rag)
