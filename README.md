@@ -84,7 +84,7 @@ Here is the generated image of a tree in a suburban neighborhood during the midd
 
 <details>
 
-<summary>**Retrieval-Augmented Generation (RAG)** is a method used in natural language processing that combines **retrieval** of relevant information with **generation** of natural language responses.</summary> It enables large language models (LLMs) to generate more accurate, contextually relevant, and informed answers by incorporating external knowledge into the response process. RAG is particularly valuable in applications where the model needs to generate responses based on a large knowledge base or document set, such as in customer service, question answering, and summarization tasks.
+<summary><b>Retrieval-Augmented Generation (RAG)</b> is a method used in natural language processing that combines <i>retrieval</i> of relevant information with <i>generation</i> of natural language responses.</summary> It enables large language models (LLMs) to generate more accurate, contextually relevant, and informed answers by incorporating external knowledge into the response process. RAG is particularly valuable in applications where the model needs to generate responses based on a large knowledge base or document set, such as in customer service, question answering, and summarization tasks.
 
 ### Key Components of Retrieval-Augmented Generation
 
@@ -117,7 +117,7 @@ The basic workflow of a RAG system is as follows:
 
 <details>
 
-<summary>**Docker** is an open-source platform that enables developers to automate the deployment, scaling, and management of applications inside lightweight, portable containers.</summary> These containers bundle everything needed to run an application, including the code, runtime, libraries, and dependencies, making it easier to develop, ship, and run applications consistently across different environments.
+<summary><b>Docker</b> is an open-source platform that enables developers to automate the deployment, scaling, and management of applications inside lightweight, portable containers.</summary> These containers bundle everything needed to run an application, including the code, runtime, libraries, and dependencies, making it easier to develop, ship, and run applications consistently across different environments.
 
 ### Key Concepts in Docker
 
@@ -161,7 +161,7 @@ The basic workflow of a RAG system is as follows:
 
 <details>
 
-<summary>**Streamlit** is an open-source Python library that makes it easy for developers and data scientists to build and deploy interactive web applications, including apps for data analysis or interacting with large language models.</summary> Streamlit simplifies the process of creating user interfaces for data science projects by enabling you to build a front end in Python, without needing extensive web development skills.
+<summary><b>Streamlit</b> is an open-source Python library that makes it easy for developers and data scientists to build and deploy interactive web applications, including apps for data analysis or interacting with large language models.</summary> Streamlit simplifies the process of creating user interfaces for data science projects by enabling you to build a front end in Python, without needing extensive web development skills.
 
 ### Key Features of Streamlit
 
@@ -198,7 +198,7 @@ In summary, Streamlit is a powerful tool for turning data and models into intera
 
 <details>
 
-<summary>**OpenSearch** is an open-source search and analytics suite that enables users to perform advanced search, monitoring, and analysis tasks on large volumes of data.</summary> Originally derived from Elasticsearch and Kibana, OpenSearch was developed by Amazon Web Services (AWS) as a community-driven, Apache 2.0 licensed alternative. It offers capabilities for full-text search, log and event data analysis, and real-time analytics, commonly used in application monitoring, security monitoring, and business intelligence.
+<summary><b>OpenSearch</b> is an open-source search and analytics suite that enables users to perform advanced search, monitoring, and analysis tasks on large volumes of data.</summary> Originally derived from Elasticsearch and Kibana, OpenSearch was developed by Amazon Web Services (AWS) as a community-driven, Apache 2.0 licensed alternative. It offers capabilities for full-text search, log and event data analysis, and real-time analytics, commonly used in application monitoring, security monitoring, and business intelligence.
 
 ### Key Components of OpenSearch
 
