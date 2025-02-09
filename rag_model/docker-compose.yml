@@ -1,8 +1,9 @@
-version: '3.8'
-
 services:
   opensearch:
     image: opensearchproject/opensearch:latest
+    mem_limit: 5G
+    env_file:
+      - .env
     environment:
       - discovery.type=single-node
       - plugins.security.disabled=true
@@ -21,8 +22,17 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+    deploy:
+      resources:
+        reservations:
+          memory: 25g
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
     environment:
-      - OPENSEARCH_URL=http://opensearch:9200
+      - OPENSEARCH_HOST=opensearch
+      - OPENSEARCH_PORT=9200
     ports:
       - "8501:8501"
     depends_on:

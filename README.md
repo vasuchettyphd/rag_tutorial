@@ -4,7 +4,7 @@
 
 The goal of this project is to build a simple RAG (Retrieval-Augmented Generation) model and deploy it. To begin, let's start out with some definitions to better understand the principles behind RAG models as well as some of the foundational architecture we will use to quickly deploy it. We will use Docker to make it easy to deploy in any environment, OpenSearch for storing external data, and Streamlit to interact with the model. 
 
-Note that the code used in this project as well as the documentation for this README was generated using [ChatGPT 4o](https://chatgpt.com/) before being edited and tested by a human.
+Note that most of the code used in this project as well as the majority of the documentation in the appendix of this README was generated using [ChatGPT 4o](https://chatgpt.com/). A human reviewed and tested all the content to ensure it worked correctly and explained the concepts well.
 
 ### Table of Contents
 - [Project](#project)
@@ -25,13 +25,31 @@ Note that the code used in this project as well as the documentation for this RE
 
 <a name="docker-container"/>
 
-## Hosting the Docker Container
+## Running the Docker Container
 <p align="right"><a href="#top">Go to top</a></p>
+Before beginning, ensure that [docker](https://docs.docker.com/desktop/) is installed and running on your local machine. In this project we will run the docker container and streamlit app locally, if you want to deploy it to a production environment you would need a cloud registry to store the docker image (such as [Amazon ECR](https://aws.amazon.com/ecr/)) and a container service to run the container (such as [Amazon ECS](https://aws.amazon.com/ecs/) or [Amazon EKS](https://aws.amazon.com/eks/)). You would also likely need a load balancer (such as [ELB](https://aws.amazon.com/elasticloadbalancing/)) which can be tied to your domain name or some way to route the container to your domain name if you don't plan on using a load balancer (although the use of one is recommended).
+
+After installing and running docker, clone this repo to your local machine (git clone git@github.com:vasuchettyphd/rag_tutorial.git) or download the [zip file](https://github.com/vasuchettyphd/rag_tutorial/archive/refs/heads/main.zip) and unzip it using [7-zip](https://www.7-zip.org/) or [WinRAR](https://www.win-rar.com/). The next step is to run the `docker-compose` file using the command:
+-  `docker-compose up -d` (Note this process can take over 5 minutes due to the size of the packages being installed)
+The `-d` runs the command in detached mode, if you don't run it in detached mode then the output will be print to the terminal (which is useful for debugging) and the docker containers will stop once the terminal window is closed. If you want to stop the containers while the containers are running in detached mode, run the command `docker-compose down`.
+
+
+
+build the docker image, using a terminal navigate to the folder with the Dockerfile (called `rag_model` in this repo) and use the following command:
+- `docker build . -t rag_model` (note that this process will likely take around 5-6 minutes)
+The period in the command is the location of the Dockerfile (in this case the same directory) and the `-t` parameter is the tag with which we are labeling the image (and how we will refer to it from now on). 
+
+If you already have another docker image with the same tag/name, you will need to use a different tag/name. If you want to make changes to an existing image, this command will replace the one that already exists. You may need to clean up old dangling images using the command `docker images -a | grep none | awk '{ print $3; }' | xargs docker rmi --force`. You can check the current images on your local machine with the command `docker image ls`. If there are a lot of images with the `<none>` tag, they can safely be removed. Just make sure that there are no images you need with the word `none` in them before running this command, otherwise you may need to remove dangling images using their `<IMAGE_ID>` with the command `docker image rm <IMAGE_ID>`.
+
+Once the container has been built, the container can be run using the command:
+- `docker run -p 8501:8501 rag_model`
+The `-p` parameter is for the mapping of ports, it maps the port from the docker container to the port on the local machine (or server). The port is where the streamlit app is running on the server, if you  already have another docker container or app on that port you can choose a different mapping (this is easily possible if you have multiple docker containers with streamlit apps running). 
+
 
 
 <a name="streamlit-app"/>
 
-## Hosting the Streamlit App
+## Interacting with the Streamlit App
 <p align="right"><a href="#top">Go to top</a></p>
 
 
